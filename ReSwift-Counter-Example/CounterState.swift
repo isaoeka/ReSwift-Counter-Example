@@ -1,5 +1,5 @@
 //
-//  AppState.swift
+//  CounterState.swift
 //  ReSwift-Counter-Example
 //
 //  Created by Isao Kono on 2017/07/01.
@@ -8,6 +8,6 @@
 
 import ReSwift
 
-struct AppState: StateType {
-    var counter: CounterState? = CounterState()
+struct CounterState: StateType {
+    var count: Int = 0
 }

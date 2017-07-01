@@ -11,7 +11,9 @@ import ReSwift
 struct AppReducer {
     
     static func handleAction(action: Action, state: AppState?) -> AppState {
-        return AppState()
+        return AppState(
+            counter: CounterReducer.counterReducer(action: action, state: state?.counter)
+        )
     }
 }
 

@@ -15,6 +15,9 @@
 		196E28ED1F07D8120018D52F /* ReSwift_Counter_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E28EC1F07D8120018D52F /* ReSwift_Counter_ExampleTests.swift */; };
 		196E28FE1F07DDCC0018D52F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E28FD1F07DDCC0018D52F /* AppState.swift */; };
 		196E29001F07DE140018D52F /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E28FF1F07DE140018D52F /* AppReducer.swift */; };
+		196E29021F07EBF10018D52F /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E29011F07EBF10018D52F /* CounterState.swift */; };
+		196E29041F07EC350018D52F /* CounterStateActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E29031F07EC350018D52F /* CounterStateActions.swift */; };
+		196E29061F07ED4E0018D52F /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196E29051F07ED4E0018D52F /* CounterReducer.swift */; };
 		6BC448A1BD07E5A6D735B935 /* Pods_ReSwift_Counter_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F422FF9D2C55542A825C89 /* Pods_ReSwift_Counter_ExampleTests.framework */; };
 		B66AAC8BA7A1780E20BC377A /* Pods_ReSwift_Counter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A05B4F4192AF29B594043773 /* Pods_ReSwift_Counter_Example.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +46,9 @@
 		196E28EE1F07D8120018D52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		196E28FD1F07DDCC0018D52F /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		196E28FF1F07DE140018D52F /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		196E29011F07EBF10018D52F /* CounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
+		196E29031F07EC350018D52F /* CounterStateActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterStateActions.swift; sourceTree = "<group>"; };
+		196E29051F07ED4E0018D52F /* CounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
 		538D76EFA853C203B69ADF38 /* Pods-ReSwift-Counter-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwift-Counter-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwift-Counter-Example/Pods-ReSwift-Counter-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7F64D7D16A83018FD29094EB /* Pods-ReSwift-Counter-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwift-Counter-ExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwift-Counter-ExampleTests/Pods-ReSwift-Counter-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B21DF8E747E54443BA503BD /* Pods-ReSwift-Counter-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwift-Counter-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwift-Counter-Example/Pods-ReSwift-Counter-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 		196E28F91F07DCAF0018D52F /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				196E29031F07EC350018D52F /* CounterStateActions.swift */,
 			);
 			name = Actions;
 			sourceTree = "<group>";
@@ -126,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				196E28FD1F07DDCC0018D52F /* AppState.swift */,
+				196E29011F07EBF10018D52F /* CounterState.swift */,
 			);
 			name = State;
 			sourceTree = "<group>";
@@ -134,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				196E28FF1F07DE140018D52F /* AppReducer.swift */,
+				196E29051F07ED4E0018D52F /* CounterReducer.swift */,
 			);
 			name = Reducers;
 			sourceTree = "<group>";
@@ -360,9 +369,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				196E29041F07EC350018D52F /* CounterStateActions.swift in Sources */,
 				196E28FE1F07DDCC0018D52F /* AppState.swift in Sources */,
+				196E29021F07EBF10018D52F /* CounterState.swift in Sources */,
 				196E28DA1F07D8120018D52F /* ViewController.swift in Sources */,
 				196E29001F07DE140018D52F /* AppReducer.swift in Sources */,
+				196E29061F07ED4E0018D52F /* CounterReducer.swift in Sources */,
 				196E28D81F07D8120018D52F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
